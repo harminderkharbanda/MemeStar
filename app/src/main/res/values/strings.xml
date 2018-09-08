@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">MemeStar</string>
+    <string name="error_message">An error has occurred. Check internet and relaunch the app.</string>
+    <string name="meme_cd">Meme</string>
+</resources>

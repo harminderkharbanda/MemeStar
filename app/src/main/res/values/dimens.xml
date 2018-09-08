@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="error_text_size">20sp</dimen>
+    <dimen name="error_padding">16dp</dimen>
+    <dimen name="progressbar_size">42dp</dimen>
+    <dimen name="recipe_card">300dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
+</resources>
