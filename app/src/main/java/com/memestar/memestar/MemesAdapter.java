@@ -23,6 +23,8 @@ public class MemesAdapter extends RecyclerView.Adapter<MemesAdapter.MemesViewHol
 
     public interface MemesClickListener {
         void onMemeClicked(Meme meme);
+        void onWAClicked(Meme meme);
+        void onShareClicked(Meme meme);
     }
 
     @NonNull
@@ -46,16 +48,33 @@ public class MemesAdapter extends RecyclerView.Adapter<MemesAdapter.MemesViewHol
 
     public class MemesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private ImageView memeImage;
+        private ImageView waImage;
+        private ImageView shareImage;
 
         MemesViewHolder(@NonNull View itemView) {
             super(itemView);
             memeImage = itemView.findViewById(R.id.meme_iv);
-            itemView.setOnClickListener(this);
+            waImage = itemView.findViewById(R.id.wa_icon_iv);
+            shareImage = itemView.findViewById(R.id.share_icon_iv);
+            memeImage.setOnClickListener(this);
+            waImage.setOnClickListener(this);
+            shareImage.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-            memesClickListener.onMemeClicked(memesList.get(getAdapterPosition()));
+            int viewId = view.getId();
+            switch (viewId)
+            {
+                case R.id.meme_iv:
+                    memesClickListener.onMemeClicked(memesList.get(getAdapterPosition()));
+                    break;
+                case R.id.wa_icon_iv:
+                    memesClickListener.onWAClicked(memesList.get(getAdapterPosition()));
+                    break;
+                case R.id.share_icon_iv:
+                    memesClickListener.onShareClicked(memesList.get(getAdapterPosition()));
+            }
         }
     }
 

@@ -1,5 +1,13 @@
 <resources>
-	<string name="app_name">MemeStar</string>
+    <string name="app_name">MemeStar</string>
     <string name="error_message">An error has occurred. Check internet and relaunch the app.</string>
     <string name="meme_cd">Meme</string>
+    <string name="wa_share">Whatsapp Share</string>
+    <string name="share">Share Meme</string>
+    <string name="meme_full_view">Meme Full View</string>
+    <string name="button_text_all">All</string>
+    <string name="button_text_bollywood">Bollywood</string>
+    <string name="button_text_sports">Sports</string>
+    <string name="widget_meme">Meme in widget</string>
+    <string name="next_meme">Next Meme</string>
 </resources>

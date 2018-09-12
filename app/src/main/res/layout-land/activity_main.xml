@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="12">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_text_all"
+            android:layout_margin="@dimen/category_buttons_margin"
+            android:background="@drawable/button_selector"
+            android:id="@+id/btn_all"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_text_bollywood"
+            android:layout_margin="@dimen/category_buttons_margin"
+            android:id="@+id/btn_bolly"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/button_text_sports"
+            android:layout_margin="@dimen/category_buttons_margin"
+            android:id="@+id/btn_sports"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/memes_recyclerview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_error_message"
+            android:textSize="@dimen/error_text_size"
+            android:padding="@dimen/error_padding"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:text="@string/error_message"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/progressbar_size"
+            android:layout_height="@dimen/progressbar_size"
+            android:id="@+id/pb_loading_indicator"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_free"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            android:layout_gravity="bottom|center"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
+
+
+
+
+<!--<android.support.design.widget.CoordinatorLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/appbar_height"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:elevation="@dimen/appbar_elevation"-->
+        <!--&gt;-->
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapsingToolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--app:expandedTitleMarginStart="48dp"-->
+            <!--app:expandedTitleMarginEnd="64dp"-->
+            <!--&gt;-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways"-->
+                <!--android:layout_height="?android:attr/actionBarSize"/>-->
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="12"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3"-->
+            <!--android:layout_marginTop="?android:attr/actionBarSize"-->
+            <!--&gt;-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/button_text_all"-->
+                <!--android:layout_margin="@dimen/category_buttons_margin"-->
+                <!--android:background="@drawable/button_selector"-->
+                <!--android:id="@+id/btn_all"-->
+                <!--style="?android:attr/buttonBarButtonStyle"-->
+                <!--android:textColor="#000"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/button_text_bollywood"-->
+                <!--android:layout_margin="@dimen/category_buttons_margin"-->
+                <!--android:id="@+id/btn_bolly"-->
+                <!--style="?android:attr/buttonBarButtonStyle"-->
+                <!--android:textColor="#000"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/button_text_sports"-->
+                <!--android:layout_margin="@dimen/category_buttons_margin"-->
+                <!--android:id="@+id/btn_sports"-->
+                <!--style="?android:attr/buttonBarButtonStyle"-->
+                <!--android:textColor="#000"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="10"-->
+            <!--&gt;-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/memes_recyclerview"-->
+                <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/tv_error_message"-->
+                <!--android:textSize="@dimen/error_text_size"-->
+                <!--android:padding="@dimen/error_padding"-->
+                <!--android:visibility="invisible"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/error_message"/>-->
+
+            <!--<ProgressBar-->
+                <!--android:layout_width="@dimen/progressbar_size"-->
+                <!--android:layout_height="@dimen/progressbar_size"-->
+                <!--android:id="@+id/pb_loading_indicator"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:visibility="invisible"/>-->
+
+            <!--<com.google.android.gms.ads.AdView-->
+                <!--android:id="@+id/adView_free"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--ads:adSize="BANNER"-->
+                <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"-->
+                <!--android:layout_gravity="bottom|start"-->
+                <!--/>-->
+
+        <!--</FrameLayout>-->
+
+    <!--</LinearLayout>-->
+
+<!--</android.support.design.widget.CoordinatorLayout>-->
+
+

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "808781111258",
+    "firebase_url": "https://memestar-154aa.firebaseio.com",
+    "project_id": "memestar-154aa",
+    "storage_bucket": "memestar-154aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808781111258:android:c7ff1e8e76a71f99",
+        "android_client_info": {
+          "package_name": "com.memestar.memestar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808781111258-fh2b2mrtru960kbs2ruagl2bfhifjgvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.memestar.memestar",
+            "certificate_hash": "4bb40b25c658b21be67ccbb885d36d54bef55626"
+          }
+        },
+        {
+          "client_id": "808781111258-2gg6sd6df9jeqodqctgc201erddq9044.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5_ip7ng7Cc9oHDfXQgDGudYUS6WbX46s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808781111258-2gg6sd6df9jeqodqctgc201erddq9044.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

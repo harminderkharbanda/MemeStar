@@ -8,6 +8,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface MemeService {
-    @GET("o/test%2Fmemes.json?alt=media&token=31fe17e4-3353-40ec-afbd-0f4756943006")
+    @GET("sooper/memes.json")
     Call<List<Meme>> getMemes();
 }
+
